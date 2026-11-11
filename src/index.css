@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme{--color-cream:#faf3e8;--color-blush:#f3e0dc;--color-rose:#c9a29a;--color-caramel:#b87b4b;--color-cocoa:#3e2723;--font-serif:'Playfair Display',serif;--font-hand:'Caveat',cursive;--font-sans:'DM Sans',sans-serif}
+body{@apply bg-cream text-cocoa font-sans}
+h1,h2,h3{font-family:var(--font-serif)}
+.btn{@apply inline-flex items-center justify-center gap-1 rounded-full bg-cocoa text-cream px-5 py-2 text-sm font-medium hover:bg-caramel transition cursor-pointer focus-visible:outline-2 focus-visible:outline-caramel}
+.btn-o{@apply inline-flex items-center justify-center gap-1 rounded-full border border-cocoa/40 px-5 py-2 text-sm font-medium hover:bg-blush transition cursor-pointer}
+.card{@apply rounded-3xl bg-white/70 border border-rose/30 shadow-sm}
+.input{@apply w-full rounded-xl border border-rose/50 bg-white px-3 py-2 text-sm outline-none focus:border-caramel}
+.hand{font-family:var(--font-hand)}
+@media print{.noprint{display:none!important}}
